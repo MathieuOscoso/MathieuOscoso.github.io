@@ -1,10 +1,12 @@
 @charset "utf-8";
-
+/*reset*/
 {
     margin: 0;
     padding: 0;
 }
+/*end eset*/
 
+/*general rules*/
 header, footer, aside, nav, article {
     display: block;
 }
@@ -13,14 +15,15 @@ body {
     margin: 0 auto;
     width: 940px;
     font-family: 13px/22px "Arial";
+    color: #777;
    	background-color: #D3D3D3;
+    line-height: 130%;
 }
 
 h2 {
     font-size: 28px;
     line-height: 44px;
     padding: 22px 0;
-    margin: 0 auto;
 }
  
 h3 {
@@ -30,18 +33,22 @@ h3 {
 }
  
 p {
-    padding-bottom: 25px;
-    margin: 0 auto;
-
+    padding-bottom: 1em;
+    margin: auto;
+    line-height: 130%;
 }
+/*end of general rules*/
 
+/*start of nav bar*/
 nav {
 	width:100%;
-	margin:0 auto;
-	background: url("/Users/Mat/Desktop/EDA/MathieuOscoso.github.io/unit1_projects/images/navbarbackground.png ");
+	margin: auto;
 	padding: 5px 5px 5px 5px;
-	border: 1px 0;
+	border: 1px;
+    border-style: solid;
+    border-radius: 10px;
 }
+
 nav ul {
     margin: 0 auto;
     width: 100%;
@@ -51,8 +58,6 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	margin-left: 115px;
-	padding: 7px
-	color: #777
 }
 
 nav ul li a {
@@ -61,29 +66,77 @@ nav ul li a {
 	color: #777;
 }
 
-  nav ul li a:hover {
+nav ul li a:hover {
     color: #FFFFFF;
 }
 nav ul li.selected a {
      color: #FFFFFF;
 }
+/*end of navbar*/
 
 
+/* intro */
+table {
+    text-align: center;
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td {
+    height: 5px;
+}
+
+/*end of intro*/
+
+
+/*start of footer block*/
 footer {
-	display: block;
-	background: url("/Users/Mat/Desktop/EDA/MathieuOscoso.github.io/unit1_projects/images/navbarbackground.png");
-	text-decoration: none;
+	margin: auto auto 15px auto;
+    width: 100%;
+    height: 140px;
+    border-width: 1px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: solid;
+    font-family: 13px/22px "Arial";
+    color: #777;
+    padding: 5px 5px 5px 5px;
 }
 
-footer section header h2 {
-	color: #777;
-	margin-bottom: 0 0 0 0;
+footer p {
+    text-decoration: none;
+    font-family: 13px/22px "Arial";
+    margin: auto;
+}
+/*end of footer block*/
+
+/*start of facebook link within footer*/
+footer section {
+    height: 38px;
+    width: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
 }
 
-footer section header p {
-	color: #777;
-	text-align: justify;
+footer section a {
+    display: block;
+    text-decoration: none;
+    font-family: 13px/22px "Arial";
+    color: #777;
 }
+
+footer section a:hover {
+    color: #FFFFFF;   
+}
+
+footer section a.selected {
+    color: #FFFFFF;   
+}
+/*end of facebook link within footer*/
 
 
 
