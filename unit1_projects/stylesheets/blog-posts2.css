@@ -1,0 +1,247 @@
+@charset "utf-8";
+/*reset*/
+{
+    margin: 0;
+    padding: 0;
+}
+/*end eset*/
+
+/*general rules*/
+header, footer, aside, nav, article {
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    width: 940px;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+h1 {
+    display: block;
+    font-size: 28px;
+    line-height: 1px;
+    font-family: cursive;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 44px;
+    padding: 22px 0;
+}
+ 
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 11px 0;
+}
+ 
+p {
+    padding-bottom: 22px;
+}
+/*end of general rules*/
+
+/*title*/
+#title {
+    width: 100%;
+    height: 100px;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+}
+/*end of title*/
+
+/*start of nav bar*/
+nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    font-family: cursive;
+    font-size: 16px;
+    background: url("/Users/Mat/Desktop/EDA/MathieuOscoso.github.io/unit1_projects/images/navbackground.gif")
+}
+
+nav ul {
+    margin: 0 auto;
+    width: 940px;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+}
+ 
+nav ul li a {
+    display: block;
+    margin-right: 20px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+ 
+nav ul li a:hover {
+    color: #fff;
+}
+ 
+nav ul li.selected a {
+    color: #fff;
+}
+/*end of nav bar*/
+
+/*start of the intro*/
+#intro {
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 60px;
+    font-family: cursive;
+    width: 80%;
+}
+ 
+#intro h2 {
+    padding: 0;
+    font-weight: normal;
+}
+ 
+#intro p {
+    padding: 0;
+    color: #777;
+    font-family: cursive;
+    text-align: justify;
+}
+/*end of the intro*/
+
+/*main */
+
+#content {
+    display: table;
+}
+ 
+#mainContent {
+    display: table-cell;
+    width: 620px;
+    padding-right: 22px;
+    text-align: justify;
+    border-radius: 22px;
+    background-image: linear-gradient(to right, white, #f0f0f0);
+}
+
+.blogPost {
+    column-count: 2;
+    column-gap: 22px;
+}
+
+.blogPost h2 {
+    padding: 0;
+    margin: 0;
+}
+
+section#comments article:nth-child(2n+1) {
+    padding: 21px;
+    background: #E3E3E3;
+    border: 1px solid #d7d7d7;
+}
+
+/*end of main */
+
+
+/* aside bar */ 
+aside {
+    display: table-cell;
+    width: 300px;
+    padding-left: 40px;
+    border-radius: 22px;
+    height: 1000px;
+}
+
+.aside {
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 22px;
+    background-image: linear-gradient(to right, white, #f0f0f0);
+}
+
+li.aside {
+    padding: 0;
+}
+
+
+/*wnd of  aside bar */
+
+
+/*start footer*/
+
+footer {
+    display: table;
+    z-index: 1;
+    background-image: linear-gradient(#383838, #f0f0f0);
+    margin-top: 15px;
+    border-radius: 22px;
+}
+
+#about {
+    display: table-cell;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#favorite_website {
+    display: table-cell;
+}
+
+/*start links within footer*/
+#facebook {
+    display: table-cell;
+    height: 38px;
+    width: 120px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#facebook:a {
+    text-decoration: none;
+}
+/*end of links within footer*/
+
+/*favorite website*/
+#favorite_website {
+    display: table-cell;
+    height: 38px;
+    width: 120px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+#favorite_website:h3 {
+    text-align: center;
+}
+
+/*end of favorite website*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

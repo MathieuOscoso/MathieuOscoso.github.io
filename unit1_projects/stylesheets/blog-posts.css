@@ -86,8 +86,27 @@ table {
 td {
     height: 5px;
 }
-
 /*end of intro*/
+
+
+
+
+/*section blogsport*/
+.blogspot {
+    text-align: justify;
+    margin: auto;
+}
+
+h2, p .blogspot {
+    text-align: center;
+    margin: auto;
+}
+
+/*end of section blogspot*/
+
+/*section content*/
+
+/*end of section content
 
 
 /*start of footer block*/
