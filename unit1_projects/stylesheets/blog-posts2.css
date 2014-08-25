@@ -60,7 +60,7 @@ nav {
     width: 100%;
     font-family: cursive;
     font-size: 16px;
-    background: url("/Users/Mat/Desktop/EDA/MathieuOscoso.github.io/unit1_projects/images/navbackground.gif")
+    background-image: url("navbackground.gif");
 }
 
 nav ul {
