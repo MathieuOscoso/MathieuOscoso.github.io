@@ -60,7 +60,7 @@ nav {
     width: 100%;
     font-family: cursive;
     font-size: 16px;
-    background-image: url("navbackground.gif");
+    background-image: url("../images/navbackground.gif");
 }
 
 nav ul {
