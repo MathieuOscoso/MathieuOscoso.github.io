@@ -194,7 +194,28 @@ footer {
 
 }
 
+/*archives links*/
 
+#archivesLinks {
+    display: block;
+    margin-left: 20px;
+    width: auto;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+#archivesLinks li a:hover {
+    color: black;
+}
+ 
+#archivesLinks li a:active {
+    color: grey;
+}
+
+#archivesLinks li a:visited {
+    color: black;
+    background-image:linear-gradient(#EEE 0%, #FFF 100%);
+}
 
 
 
