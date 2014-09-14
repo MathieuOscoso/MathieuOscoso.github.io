@@ -1,0 +1,122 @@
+
+<meta charset="UTF-8"> 
+<html>
+<head>
+	<title> Frenchie's Blog </title>
+	<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/index.css">
+</head>
+
+<body>
+	<a id="gotop" href="#main-menu"></a>
+
+	<header>
+	        <ul id="main-menu">
+	        	<li><a href="../index.html"> Frenchie's Blog </a></li>
+	            <li><a href="../eda1.html" target="_blank">About </a></li>
+	            <li><a href="../archives.html" target="_blank"> Archives </li>
+	            <li><a href="mailto:mathieuoscoso@gmail.com">Contact</a></li>
+			</ul>
+	</header>
+	
+	<section id="welcome">
+			<h3> Welcome </h3>
+			<p> Discover a new article from Frenchie's blog</p>
+	</section>
+
+	<section id="blogpost">
+		<article> 
+			<h2> C# .NET </h2>
+			<p id="text"><br>Enumerable Methods: ArrayList.IndexOf 
+			<br>
+			<br> ArrayList is an array with a non defined number of element in it.
+			<br> 
+			<br> IndexOf is a method that searchs string or numbers and return the zero index based (or the position) of the first occurence of a letter or an object.
+			<br>
+			<br> So for a given ArrayList 
+			<br>
+			<br>// cs 
+			<br>ArrayList myNumbers = new ArrayList ();
+			<br>myNumbers.Add(1);
+			<br>myNumbers.Add(4);
+			<br>myNumbers.Add(2);
+			<br>myNumbers.Add(7);
+			<br>myNumbers.Add(2);
+			<br>myNumbers.Add(19);
+			<br>
+			<br> // Say we want to know were is located the first occurence of the number 2  within the list.
+			<br>
+			<br> // We declare the object.
+			<br>
+			<br> int theNumber = 2;
+			<br> Console.WriteLine("The first occurence of " + theNumber + " is at the position" + myNumbers.IndexOf( theNumber ) + " in the list")
+			<br> // cs
+
+			<br> We can use this Method to locate an occurence from the beginning of the list, as we did, but also we can use locate an occurence between a certain point of the list to another.
+
+			<br> // cs
+			<br> int theNumber = 2;
+			<br> myNumbers.IndexOf( theNumber, 5) // between the fifth number and the end of the list
+			<br> myNumbers.IndexOf( theNumber, 5, 9) // between the fifth and the ninth
+			<br> myNumbers.IndexOf( theNumber, 16) // if the number is outside of the list the method will return -1.
+
+			<br> An exercice to practice this method.
+			<br>
+			<br> Within the following list, find the position of the occurence "how" in the following list using the following parameters:
+			<br> - from the beginning to the end of the list
+			<br> - from the index 5 to the end
+			<br> - from the index 5 to 9
+			<br> - from the index 12
+			<br>
+			<br> // cs
+			<br>ArrayList myWords = new ArrayList ();
+			<br>myWords.Add( "It");
+			<br>myWords.Add( "is");
+			<br>myWords.Add( "not");
+			<br>myWords.Add( "how");
+			<br>myWords.Add( "much");
+			<br>myWords.Add( "we");
+			<br>myWords.Add( "have");
+			<br>myWords.Add( "but");
+			<br>myWords.Add( "how");
+			<br>myWords.Add( "much");
+			<br>myWords.Add( "we");
+			<br>myWords.Add( "enjoy");
+			<br> // cs
+
+			<br> Your answer should be 3, 7, 7, -1.
+			<br>
+			<br>
+			<br>
+
+			<br> Arrays vs. Hashes. What are they? 
+			<br> Array = a list of element that are stored like in a table with a position automatically given from the beginning to the end.
+			<br> Hashes = a list of element that aren't ordered but from groups. They have the name of a "group" called a key that is arbitrary choosen by you.
+
+			<br> They role is to store data that will be accessed later on.
+
+			<br> Each one have a different use and if you have a long list of data to store, that need to be ordered but without knowing the number of information you will store I would recomment to use array. 
+			<br>
+			<br> On another hand, hashes are way more secured as you need the key to access to the information, in the way that some password method use the hashtables to confirm that a key correspond to an element. 
+			<br>
+			<br> A good strategy would always be to ask yourself. What am I gonna use this list for? Do I know in advance the number of data I will store? What kind of data will it be? Do I need to secure this data? 
+
+			
+
+
+			<br> By Frenchie </p>
+		</article>
+	</section>	
+
+	<footer>
+			<h4> Made by Frenchie </h4>
+			<a href="http://facebook.com/mathieuoscoso" target="_blank"><img alt="Follow me on Facebook" src="../unit1_projects/images/facebook-icon18x18.png" /></a>
+			<a href="http://twitter.com/mathieuoscoso" target="_blank"><img alt="Follow me on Twitter" src="../unit1_projects/images/twitter-icon18x18.png" /></a>
+			<a href="https://plus.google.com/mathieuoscoso" target="_blank"><img alt="Follow me on Google+" src="../unit1_projects/images/google+-icon18x18.png" /></a>
+	</footer>
+
+</body>
+</html>
+
+
+
